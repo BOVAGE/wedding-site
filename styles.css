@@ -1,0 +1,307 @@
+/* used the mobile first responsiveness approach */
+/* general rules */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Pacifico&family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 14px;
+	scroll-behavior: smooth;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.icon {
+	width: 80px;
+	height: 80px;
+}
+
+.bullet-icon {
+	width: 48px;
+	height: 48px;
+	vertical-align: middle;
+}
+
+h1 {
+	position: relative;
+	font-family: 'Pacifico', cursive;
+	font-size: 2.5rem;
+	text-align: center;
+	color: #5e045e;
+	padding-bottom: 10px;
+	z-index: 9;
+}
+
+/* header rules */
+header {
+	position: relative;
+	background-image: linear-gradient(to right, rgba(255, 255, 255,0.1), 30%, rgba(255, 215, 0, 0.3)),
+					url("images/bg-header.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	background-attachment: fixed;
+}
+
+#menu{
+	border-radius: 12px;
+	color: #470347;
+	font-family: 'Train One', cursive;
+	font-size: 1.1rem;
+	padding: 4px 8px;
+	border: 1px solid gold;
+	width: 100px;
+	text-align: center;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.date {
+	color: #780578;
+}
+
+.top {
+	width: 100%;
+	padding: 4px 8px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	z-index: 10;
+}
+
+.centered-text {
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	padding-bottom: 50px;
+	color: #5e045e;
+}
+
+.main-text {
+	font-size: 3.0rem;
+}
+
+.centered-text time {
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+
+/* svg rules */
+.custom-shape-divider-bottom-1617404657 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1617404657 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1617404657 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* invitation section rules */
+#invitation {
+	text-align: center;
+	padding: 30px 0;
+}
+
+#invitation > iframe {
+	width: 100%;
+}
+
+p.location {
+	font-weight: 500;
+}
+
+.countdown-container {
+	display: grid;
+	grid-template-columns: repeat(2, 150px);
+	grid-auto-rows: 150px;
+	justify-content: center;
+	grid-gap: 20px;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.countdown-container > div {
+	/* width: 100px; */
+	/* height: 100px; */
+	border-radius: 50%;
+	border-width: 14px;
+	border-style: groove;
+	border-color: gold;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.big {
+	font-size: 3.5rem;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+
+/* gallery section rules */
+#gallery {
+	position: relative;
+	background: linear-gradient(to right, rgba(255, 255, 255,0.4), 50%, rgba(255, 215, 0, 0.7));
+}
+
+#gallery h1 {
+	background-color: white;
+}
+
+.mySlides img {
+	border-radius: 25px;
+	border: 15px groove gold;
+}
+
+/* outro section rules */
+#outro {
+	position: relative;
+	background-image: linear-gradient(to right, rgba(255, 255, 255,0.2), 30%, rgba(255, 215, 0, 0.6)),
+					url(images/tennis.jpg);
+	background-position: top center;
+	background-size: cover;
+	height: 500px;
+	margin-top: 60px;
+}
+
+#wed-quote {
+	font-size: 1.9rem;
+	font-weight: 500;
+	width: 80%;
+	margin-left: auto;
+	text-align: left;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer {
+	text-align: center;
+	padding: 8px;
+}
+
+/* slideshow */
+.images-container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 10px;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* media queries */
+/* for medium and large screens */
+@media screen and min-width: {
+	
+}
